@@ -1,9 +1,13 @@
+
+* {
+    box-sizing: border-box;
+
+}
 .header {
     display: flex;
     padding-left: 10px;
 
 }
-
 
 .navcontainer {
     display: flex;
@@ -26,8 +30,7 @@ ul{
     text-decoration: none !important;
     color: gray;
     text-decoration: none;
-   
-}
+    }
 
 .menuitems {
 
@@ -111,5 +114,58 @@ margin-left: 80px;
     padding: 0 18px;
     background-color: white;
     display: none;
-    overflow: hidden;
+  overflow: hidden;}
+
+body {
+    position: relative;
+}
+
+.backshape {
+    position: absolute;
+    left: 0;
+    bottom: auto;
+    z-index: -1;
+    display: block;
+    width: 56vw;
+    height: 56vw;
+    border-radius: 6.6vw;
+    background-color: #f2faff;
+    -webkit-transform: rotate(-23deg);
+    -ms-transform: rotate(-23deg);
+    transform: rotate(-23deg);
+    top: -88%;
+    right: -23%;
+    width: 90%;
+    height: 120%;
+}
+
+.maincontainer {
+    width: 100%;
+    max-width: 70rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pricing-contatiner {
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-top: 40px;
+    padding: 0 2.5rem 0 2.5rem;
+
+}
+
+.planDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.625rem;
+    line-height: 1.4;
+    font-weight: 600;
+
 }
