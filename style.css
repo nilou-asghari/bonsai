@@ -1,8 +1,8 @@
-
 * {
     box-sizing: border-box;
 
 }
+
 .header {
     display: flex;
     padding-left: 10px;
@@ -15,7 +15,7 @@
     max-height: 80px;
 }
 
-ul{
+ul {
 
     display: flex;
     width: 400px;
@@ -26,18 +26,18 @@ ul{
 
 }
 
-.list-items { 
+.list-items {
     text-decoration: none !important;
     color: gray;
     text-decoration: none;
-    }
+}
 
 .menuitems {
 
-margin-left: 80px;
+    margin-left: 80px;
     list-style: none;
     color: gray;
-    
+
 }
 
 #login {
@@ -58,7 +58,7 @@ margin-left: 80px;
     width: 100px;
     height: 35px;
     color: white;
-    font-weight:500;
+    font-weight: 500;
 }
 
 .login {
@@ -101,20 +101,22 @@ margin-left: 80px;
 
 }
 
-.active, .questions:hover {
+.active,
+.questions:hover {
     background-color: #ccc;
-   
-  }
 
-  .answer {
+}
+
+.answer {
     display: none;
-  }
+}
 
 .dropdownfaq {
     padding: 0 18px;
     background-color: white;
     display: none;
-  overflow: hidden;}
+    overflow: hidden;
+}
 
 body {
     position: relative;
@@ -147,18 +149,41 @@ body {
 }
 
 .pricing-contatiner {
-    display: flex;
+
     display: flex;
     justify-content: space-evenly;
     align-content: center;
-    padding-top: 40px;
+    margin-top: 140px;
     padding: 0 2.5rem 0 2.5rem;
 
 }
 
 .planDiv {
+    position: relative;
     display: flex;
+    overflow: hidden;
+    width: 32%;
+    padding: 6% 4%;
     flex-direction: column;
+    border: 0.3px solid rgba(2, 4, 69, .15);
+    border-radius: 4px;
+    background-color: #fbfcff;
+    box-shadow: 0 0 68px 0 rgba(2, 4, 69, .08);
+}
+
+.price {
+    display: flex;
+    align-items: flex-end;
+    font-size: 62px;
+    line-height: 72px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.price-box {
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 2px solid #01b289;
 }
 
 .heading {
@@ -168,4 +193,84 @@ body {
     line-height: 1.4;
     font-weight: 600;
 
+}
+
+.currency-symbol {
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    font-size: 30px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.planFeatures {
+    margin-bottom: 25px;
+    padding-top: 40px;
+}
+
+.tick-div {
+
+    display: flex;
+    padding-bottom: 18px;
+    align-items: center;
+    color: #4c4d5f;
+    font-size: 16px;
+    line-height: 23px
+}
+
+.tick-div img {
+    border: 0;
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 100%;
+    margin: 0 0.625rem 0 0;
+}
+
+.month {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.625rem;
+    line-height: 1.4;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.planbtn {
+    width: 100%;
+    padding: 22px 25px;
+    border-radius: 4px;
+    background-color: #00b289;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: .7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: auto;
+    color: #fff;
+    border: none;
+
+}
+
+.popular-tag {
+    position: absolute;
+    left: auto;
+    top: 50px;
+    right: -109px;
+    bottom: auto;
+    width: 360px;
+    padding: 11px 100px;
+    background-color: #01b289;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
